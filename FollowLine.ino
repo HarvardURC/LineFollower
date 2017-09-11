@@ -33,7 +33,7 @@ void configureSensor(void)
 }
 
 void setup() {
-  // put your setup code here, to run once:
+  // pin configuration
   Serial.begin(9600);
   pinMode(leftWheelB, OUTPUT);
   pinMode(leftWheelA, OUTPUT);
@@ -41,6 +41,17 @@ void setup() {
   pinMode(rightWheelA, OUTPUT);
   configureSensor();
   pinMode(LED_PIN,OUTPUT);
+ 
+  /* PID variables
+  // PID gains
+  kp = 0;
+  ki = 0;
+  kd = 0;
+  
+  // error accumulators
+  cumulative_error = 0;
+  prev_error = 0;
+  */
 }
 
 void setDriveSpeed(int left, int right) {
@@ -75,14 +86,33 @@ void turnLeft() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  // acquire sensor readings
   digitalWrite(LED_PIN,HIGH);
   tsl.getEvent(&on);
   digitalWrite(LED_PIN,LOW);
   tsl.getEvent(&off);
-  /* Display the results (light is measured in lux) */
+  
+  // Display the results (light is measured in lux)
   Serial.print(on.light-off.light);
+  
+  /* PID control loop
+  // definition of error changes depending on sensors used
+  error = (on.light - off.light) - THRESHOLD; // polarity might be change depending on system orientation
+  
+  // update error integration
+  cumulative_error += error;
+  
+  // calculate error derivative
+  error_derivative = error - prev_error;
+  
+  control = kp * error + ki * cumulative_error + kd * error_derivative;
+  drive = control; // need some conversion of control to drive signal (need real values to determine this)
+  setDriveSpeed(20, drive); // only need to control right wheel's speed if you keep the other constant
+  
+  // update error buffer
+  prev_error = error;
+  */
+  
   if(on.light-off.light > THRESHOLD) {
     Serial.println("left");
     setDriveSpeed(0,100);
