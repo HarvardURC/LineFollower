@@ -22,17 +22,18 @@ We encourage you to read through all the steps before you start. It's a good ide
 - You can program in the teensy using the Arduino IDE. (Install here: https://www.arduino.cc/en/Main/Software)
 - You will also need to download software to interface arduino and teensy. (Download here: https://www.pjrc.com/teensy/td_download.html)
 - Electrical components (should test separately on breadboard before attaching to robot):
-    - Sensors to teensy (sensors run on 5V so will need to add voltage divider to signal lines since teensy inputs are 3.3V).
+    - Sensors to teensy (sensors run on 5V so will need to add voltage divider to signal lines since teensy inputs are 3.3V)
+        - Vin = (R1/[R1 + R2]) * Vout.  R1 = 3.3KOhm, R2 = 1.7KOhm should work. 
     - Motor driver to teensy and motor
     - Battery power supply to rails 
-    - Sensor has 5v output - use voltage divider (resistors) to drop this to 3.3v for the teensy
+    - Sensor has 5v output - use voltage divider (resistors) to drop this to 3.3v for the teensy. 
     - Circuit schematic below
 - Mount sensors
-- Solder connections from motor driver to motor (there are two small metal contacts on each motor - see schematic)
-- Upload code onto teensy (there is code in the github repo but we used different sensors! use this code as a reference only- it will not work with your bot.)
+- Solder connections from motor driver to motor (there are two small metal contacts on each motor - see schematic.) Let one of our members know when you are ready to move onto this step and they will set you up with the soldering iron
+- Upload code onto teensy (there is code in the github repo but we used different sensors! use this code as a reference only- it will not work with your bot)
 - Ask our members if you have any questions!
 - Have fun!
 
 
 ![circuit schematic]
-(https://github.com/HarvardURC/LineFollower/blob/master/IMG_9316.JPG)
+(https://github.com/HarvardURC/LineFollower/blob/master/IMG_2298.JPG)
