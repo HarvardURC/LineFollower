@@ -40,7 +40,7 @@ We encourage you to read through all the steps before you start. It's a good ide
 - Have fun!
 
 
-![circuit schematic]
+[circuit schematic]
 (https://github.com/HarvardURC/LineFollower/blob/master/IMG_2298.JPG)
 
 MAY THE BEST ROBOT WIN! (there is no prize - only glory)
