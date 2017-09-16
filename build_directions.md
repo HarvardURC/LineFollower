@@ -39,4 +39,4 @@ We encourage you to read through all the steps before you start. It's a good ide
 ![circuit schematic]
 (https://github.com/HarvardURC/LineFollower/blob/master/IMG_2298.JPG)
 
-MAY THE BEST ROBOT WIN!
+MAY THE BEST ROBOT WIN! (there is no prize - only glory)
