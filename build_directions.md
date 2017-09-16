@@ -32,7 +32,6 @@ We encourage you to read through all the steps before you start. It's a good ide
     - Motor driver to teensy and motor
     - Battery power supply to rails 
     - Teensy powered from batteries - need to add voltage divider since batteries will supply 6V and teensy is regulated for up to 5V.
-    - Sensor has 5v output - use voltage divider (resistors) to drop this to 3.3v for the teensy. 
     - Circuit schematic below
 - Mount sensors
 - Solder connections from motor driver to motor (there are two small metal contacts on each motor - see schematic.) Let one of our members know when you are ready to move onto this step and they will set you up with the soldering iron
