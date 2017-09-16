@@ -8,7 +8,7 @@ Line Follow Build Directions!
 > - .5" Ball Caster (size may change)
 > - Teensy LC (3.3V) https://www.pjrc.com/teensy/teensyLC.html
 > - 4 AA holder (6V output max -> 4V) w/ switch
-> - 48 pack of AA (need 4)
+> - 4 AA batteries
 > - Breadboard 
 > - Micro USB Cable
 > - IR Sensor https://www.pololu.com/product/2456
