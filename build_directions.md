@@ -19,7 +19,7 @@ Steps
 We encourage you to read through all the steps before you start. It's a good idea to test the sensors and motors separately before putting them together!You can find datasheets for all the parts by clicking on the links above. 
 - Construct gearbox (instructions on box)
 - Attach wheels and battery holder to gearbox
-- Solder the headers onto the teensys if necessary. (Ask one of our current members to set you up with a soldering iron)
+- Solder the headers onto the teensys/motodriver if necessary. (Ask one of our current members to set you up with a soldering iron)
 - You can program in the teensy using the Arduino IDE. (Install here: https://www.arduino.cc/en/Main/Software)
 - You will also need to download software to interface arduino and teensy. (Download here: https://www.pjrc.com/teensy/td_download.html)
 - Electrical components (should test separately on breadboard before attaching to robot):
