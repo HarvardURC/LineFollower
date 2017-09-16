@@ -32,3 +32,7 @@ We encourage you to read through all the steps before you start. It's a good ide
 - Upload code onto teensy (there is code in the github repo but we used different sensors! use this code as a reference only- it will not work with your bot.)
 - Ask our members if you have any questions!
 - Have fun!
+
+
+![circuit schematic]
+(https://github.com/HarvardURC/LineFollower/blob/master/IMG_9316.JPG)
