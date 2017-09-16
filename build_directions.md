@@ -13,6 +13,10 @@ Line Follow Build Directions!
 > - Micro USB Cable
 > - IR Sensor https://www.pololu.com/product/2456
 
+Logistics
+------
+If you don't finish your bot 
+
 Steps
 ------
 
@@ -27,6 +31,7 @@ We encourage you to read through all the steps before you start. It's a good ide
         - Vout = (R1/[R1 + R2]) * Vin.  R1 = 3.3KOhm, R2 = 1.7KOhm should work. 
     - Motor driver to teensy and motor
     - Battery power supply to rails 
+    - Teensy powered from batteries - need to add voltage divider since batteries will supply 6V and teensy is regulated for up to 5V.
     - Sensor has 5v output - use voltage divider (resistors) to drop this to 3.3v for the teensy. 
     - Circuit schematic below
 - Mount sensors
