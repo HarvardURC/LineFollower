@@ -24,7 +24,7 @@ We encourage you to read through all the steps before you start. It's a good ide
 - You will also need to download software to interface arduino and teensy. (Download here: https://www.pjrc.com/teensy/td_download.html)
 - Electrical components (should test separately on breadboard before attaching to robot):
     - Sensors to teensy (sensors run on 5V so will need to add voltage divider to signal lines since teensy inputs are 3.3V)
-        - Vin = (R1/[R1 + R2]) * Vout.  R1 = 3.3KOhm, R2 = 1.7KOhm should work. 
+        - Vout = (R1/[R1 + R2]) * Vin.  R1 = 3.3KOhm, R2 = 1.7KOhm should work. 
     - Motor driver to teensy and motor
     - Battery power supply to rails 
     - Sensor has 5v output - use voltage divider (resistors) to drop this to 3.3v for the teensy. 
