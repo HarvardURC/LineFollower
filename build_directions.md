@@ -15,7 +15,7 @@ Line Follow Build Directions!
 
 Logistics
 ------
-Try and finish your bot over this weekend's build sessions and next weekend's build session. If you don't finish your bot, it's ok though. You are required to put in effort.
+Try and finish your bot over this weekend's build sessions and next weekend's build session. If you don't finish your bot, it's ok. You are only required to put in effort.
 
 Steps
 ------
