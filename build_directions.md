@@ -22,25 +22,23 @@ Steps
 
 We encourage you to read through all the steps before you start. It's a good idea to test the sensors and motors separately before putting them together!You can find datasheets for all the parts by clicking on the links above. 
 - Construct gearbox (instructions on box)
-- Attach wheels and battery holder to gearbox (the battery holder will double as a chassis - you can use the hot glue gun to attach it. We have an example video of the robot, ask to see it if you are unsure!) 
+- Attach wheels, battery holder, and breadboard to the gearbox - you can use the parts you designed in the Solidworks workshop, or come up with your own design!
 - Solder the headers onto the teensys/motodriver if necessary. (Ask one of our current members to set you up with a soldering iron)
 - You can program in the teensy using the Arduino IDE. (Install here: https://www.arduino.cc/en/Main/Software)
 - You will also need to download software to interface arduino and teensy. (Download here: https://www.pjrc.com/teensy/td_download.html)
 - Electrical components (should test separately on breadboard before attaching to robot):
-    - Sensors to teensy (sensors run on 5V so will need to add voltage divider to signal lines since teensy inputs are 3.3V)
-        - Vout = (R1/[R1 + R2]) * Vin.  R1 = 3.3KOhm, R2 = 1.7KOhm should work. 
+    - Sensors to teensy 
     - Motor driver to teensy and motor
-    - Battery power supply to rails 
-    - Teensy powered from batteries - need to add voltage divider since batteries will supply 6V and teensy is regulated for up to 5V.
-    - Circuit schematic below
+    - Battery power supply to 5V regulator, and regulator to rails 
+    - See the circuit schematic below for more specific wiring
 - Mount sensors
-- Solder connections from motor driver to motor (there are two small metal contacts on each motor - see schematic.) Let one of our members know when you are ready to move onto this step and they will set you up with the soldering iron
-- Upload code onto teensy (there is code in the github repo but we used different sensors! use this code as a reference only- it will not work with your bot)
+- Solder connections from motor driver to motor (there are two small metal contacts on each motor - see schematic.) Let one of our members know when you are ready to move onto this step and they will set you up with the soldering iron. Be careful not to break off the small metal tabs on the motors, they can be fragile.
+- Upload code onto teensy (there is code in the github repo for you to use as a stepping-off point!
 - Ask our members if you have any questions!
 - Have fun!
 
 
 [circuit schematic]
-(https://github.com/HarvardURC/LineFollower/blob/master/IMG_2298.JPG)
+(https://github.com/HarvardURC/LineFollower/blob/master/linefollower_schematic.jpg)
 
 MAY THE BEST ROBOT WIN! (there is no prize - only glory)
