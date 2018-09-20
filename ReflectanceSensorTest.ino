@@ -1,6 +1,6 @@
-/* Assumes you've wired up your line follower according to the available wiring
+/* Assumes you've wired up your line follower according to our provided wiring
  * diagram. Requires installation of QTRSensor Library as per
- * https://www.pololu.com/docs/0J19/2)
+ * https://www.pololu.com/docs/0J19/2
  *
  * Outputs to the Serial Monitor (go to Tools>Serial Monitor) what each
  * sensor on the QTR sensor array is reading. Lower values ~= darker, higher
@@ -18,6 +18,7 @@ QTRSensorsAnalog qtra((unsigned char[]) {14, 15, 16},
                       NUM_SENSORS, NUM_SAMPLES_PER_SENSOR);
 
 unsigned int sensorValues[NUM_SENSORS]; // For storing sensor readings
+
 
 void setup() {
   // Serial debug start
