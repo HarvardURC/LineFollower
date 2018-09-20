@@ -47,5 +47,8 @@ Code Setup
 -----------
 To use the GitHub code as a starting point you'll need to install a library so your Teensy can interface with the reflectance sensor. Information on the library can be found [here](https://www.pololu.com/docs/0J19/2)
 
-- We recommend running a sensor test to see that you are getting correct readings from your reflectance sensor. You can find a sample sensor reading sketch (QTRARawValuesExample) in the Arduino IDE under File > Examples > QTRSensors after you've installed your library (and restarted Arduino!).
+- We recommend running a sensor test to see that you are getting correct readings from your reflectance sensor.
+    - We've supplied such a sketch called ReflectanceSensorTest.ino in this repository!
+    - You should be able to run the test without any modifications if you've followed our wiring diagram.
+    - You can open the Serial Monitor in Arduino (go to Tools>Serial Monitor) to view the sensor readings!
 - Once you're getting reasonable values from your sensors, you should be ready to start improving the provided handout code!
