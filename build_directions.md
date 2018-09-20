@@ -12,6 +12,7 @@ Line Follow Build Directions!
 > - Breadboard 
 > - Micro USB Cable
 > - IR Sensor https://www.pololu.com/product/2456
+> - L78 voltage regulator
 
 Logistics
 ------
